@@ -12,15 +12,14 @@
 @interface ViewController ()
 {
     line *lt;
-//@public NSString *unittext;
+
 }
-
-
 
 @end
 
 @implementation ViewController
 
+float angle;
 
 @synthesize spacen,samplen, unitn, pickbt;
 
@@ -33,8 +32,7 @@
     lt = [[line alloc]init];
     [lt initline];
    
-    //unitn.text = @"111";
-}
+ }
 
 - (void)didReceiveMemoryWarning
 {
@@ -94,36 +92,30 @@
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [lt touchesMoved:touches withEvent:event ];
-  
-   // self.samplen.text = [lt getsample];
+   
     self.samplen.text = [lt getdistance];
     self.spacen.text = [lt getspace];
-    
-   
     [self.view addSubview:lt];
 }
 
 
-
 - (IBAction)unitn:(UITextField *)sender
 {
- 
- //   if (sender.text == @"unitn")
-  //  { sender.text = @"0";}
-  
+   
     lt.unittext = sender.text;
 }
 
 // show album
 -(IBAction)pickbt:(id)sender
 {
-   // UIImageView * uv = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 320, 480)];
     UIImagePickerController *up = [[UIImagePickerController alloc]init];
     up.delegate = self;
     up.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
-  
-  
     [self presentViewController:up animated:YES completion:NULL];
+    
+    
+   
+   
     
 }
 
@@ -133,17 +125,25 @@
 {
     [picker dismissViewControllerAnimated:YES completion:NULL];
     self.imageView.image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
+    UIImageWriteToSavedPhotosAlbum(self.imageView.image, Nil, nil, nil);
 }
 
 - (IBAction)camera:(UIButton *)sender
 {
     UIImagePickerController *ca = [[UIImagePickerController alloc]init];
     ca.delegate = self;
-
     ca.sourceType = UIImagePickerControllerSourceTypeCamera;
     [self presentViewController:ca animated:YES completion:nil];
-  //  UIImageWriteToSavedPhotosAlbum(self.imageView.image, nil, Nil, Nil);
+}
+
+
+- (IBAction)turn:(UIButton *)sende
+{
+    angle = (angle + 3.14159 /4);
+    if (angle > 6.3) {angle = 0;}
+   
+    _imageView.center = CGPointMake(160, 240);
     
-    
+    _imageView.transform = CGAffineTransformMakeRotation(angle);
 }
 @end

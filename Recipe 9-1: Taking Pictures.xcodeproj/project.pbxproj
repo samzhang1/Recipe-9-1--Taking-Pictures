@@ -21,6 +21,7 @@
 		88CF872817C59DBF003D7C86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CF870A17C59DBF003D7C86 /* UIKit.framework */; };
 		88CF873017C59DBF003D7C86 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88CF872E17C59DBF003D7C86 /* InfoPlist.strings */; };
 		88CF873217C59DBF003D7C86 /* Recipe_9_1__Taking_PicturesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CF873117C59DBF003D7C86 /* Recipe_9_1__Taking_PicturesTests.m */; };
+		D1891F8419672C4D0063C0F6 /* images.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D1891F8319672C4D0063C0F6 /* images.jpg */; };
 		D18DD0171944F7900007461C /* line.m in Sources */ = {isa = PBXBuildFile; fileRef = D18DD0161944F7900007461C /* line.m */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		88CF872D17C59DBF003D7C86 /* Recipe 9-1: Taking PicturesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Recipe 9-1: Taking PicturesTests-Info.plist"; sourceTree = "<group>"; };
 		88CF872F17C59DBF003D7C86 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		88CF873117C59DBF003D7C86 /* Recipe_9_1__Taking_PicturesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Recipe_9_1__Taking_PicturesTests.m; sourceTree = "<group>"; };
+		D1891F8319672C4D0063C0F6 /* images.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpg; sourceTree = SOURCE_ROOT; };
 		D18DD0161944F7900007461C /* line.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = line.m; path = "../../measurement/Recipe 9-1: Taking Pictures/line.m"; sourceTree = "<group>"; };
 		D18DD0181944F7B00007461C /* line.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = line.h; path = "../../measurement/Recipe 9-1: Taking Pictures/line.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +117,7 @@
 		88CF870C17C59DBF003D7C86 /* Recipe 9-1 Taking Pictures */ = {
 			isa = PBXGroup;
 			children = (
+				D1891F8319672C4D0063C0F6 /* images.jpg */,
 				D18DD0181944F7B00007461C /* line.h */,
 				D18DD0161944F7900007461C /* line.m */,
 				88CF871517C59DBF003D7C86 /* AppDelegate.h */,
@@ -238,6 +241,7 @@
 				88CF871F17C59DBF003D7C86 /* Images.xcassets in Resources */,
 				88CF871117C59DBF003D7C86 /* InfoPlist.strings in Resources */,
 				88CF871A17C59DBF003D7C86 /* Main.storyboard in Resources */,
+				D1891F8419672C4D0063C0F6 /* images.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
